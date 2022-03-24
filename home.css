@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+:root{
+    --blackOfBlack: #000E3B;
+    --blackGrey: #ADADAD;
+    --greyGrey: #DBDBDB;
+    --almostWhite: #D4D2D2;
+
+    --darkRed: #E21C21;
+    --rubyRed: #FF4040;
+    --skinRed: #FA6B75;
+    --peach: #FFA1A5; 
+
+    --enoBlue: #001E80;
+    --blue: #0332CB;
+    --lighterBlue: #83A8F0;
+    --lightestBlue: #CFDEFC;
+
+    --bananaYellow: #FADD52;
+    --weakYellow: #FFEEA6;
+
+    --niceGreen: #9BCB6C;
+
+    --raisin-black: #252323ff;
+    --slate-gray: #70798cff;
+    --isabelline: #f5f1edff;
+    --bone: #dad2bcff;
+    --grullo: #a99985ff;
+
+    --rich-black-fogra-29: #001219ff;
+    --aliWhite: #f2f2f2;
+
+}
+
+@font-face {
+    font-family: fileFont;
+    src: url(Assets/AvenirLight.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--skinRed);
+    border-radius: 10px;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+div, h1, h2, h3, h4, h5, h6, p, span, img, hr{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--aliWhite);
+    margin: 0;
+    padding: 0;
+}
+
+
+#sideBar{
+    color: rgb(95, 102, 133);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    border: 2px solid black;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+#sideBarLogo {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    font-size: 2rem;
+}
+
+
+#sideBarLogo img{
+    height: 50%;
+}
+
+#listOfLinks{
+    height: 87%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.course{
+    width: 90%;
+    margin-top: 3vh;
+}
+
+.courseVis:hover p{
+    color: var(--skinRed);
+    display: inline;
+}
+
+.courseText{
+    display: inline;
+}
+
+.courseVis {
+    padding: 1vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.active{
+    background-color: black;
+    border-radius: 10px;
+    color:white
+}
+
+.active img{
+    filter: invert(1);
+}
+
+.courseVis img{
+    margin-left: 4vh;
+    height: 2rem;
+    width: auto;
+    margin-right: 1vh;
+}
+
+.account{
+    color: black;
+
+    border-radius: 40px;
+    margin-top: auto;
+}
+
+#progressCircle{
+    width: 7vh;
+    height: 7vh;
+}
+.progressBar{
+    margin-top: auto;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+ 
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: conic-gradient(rgb(37, 161, 37) 78%, white 0);
+    margin-left: 1vh;
+    margin-bottom: 1vh;
+}
+
+.circle .inner {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    height: 70%;
+    background: var(--aliWhite);
+    border-radius: 50%;
+}
+
+.inner p{
+    padding: 1vh;
+}
+
+#overview{
+    width: 66vw;
+    margin-left: 17vw;
+    margin-right: 17vw;
+}
+
+#welcomeText{
+    font-size: 2rem;
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+
+#welcomeTextSmall {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+#course{
+    padding: 1vh;
+    height: 20vh;
+    width: 100%;
+
+    width: 95%;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+#coursesTitle{
+    margin: 1vh;
+    font-size: 2rem;
+}
+
+#rowOfCourses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#coruseText{
+    font-size: 1.5rem;
+    padding: 1vh;
+}
+
+.coruseBox{
+    box-shadow: 10px 10px grey;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    width: 18vw;
+    height: 100%;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lilac{
+    background-color: #127ed6c0;
+}
+
+.courseIMG{
+    padding: 2vh;
+    border-radius: 30px;
+    height: 60%;
+}
+
+.courseIMG img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.courseTitleContain{
+    margin-left: 2vh;
+    margin-left: 2vh;
+}
+
+.courseTitle{
+    font-size: 1rem;
+    margin-bottom: 1vh;
+}
+
+.bottomStuff{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.courseInformation{
+    color: black;
+    border-radius: 50px;
+    width: 90%;
+    height: 20%;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.courseInformation img{
+    width: 3vh;
+    height: 3vh;
+}
+
+#account{
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    background-color: White;
+    position: fixed;
+    right: 0;
+    width: 17%;
+    top: 0;
+    height: 100%;
+}
+
+#accountTitle{
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    font-size: 0.8rem;
+}
+
+#imgOfUser{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgOfUser img{
+    border: 2px solid black;
+    margin: 2vh;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+
+#imgOfUser p{
+    padding: 1vh;
+    font-size: 0.8rem;   
+}
+
+#progress{
+    box-shadow: 10px 10px grey;
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    left: 62%;
+    width: 18vw;
+    height: 40vh;
+}
+
+
+.calendar {
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    width: 90%; /*change as per your design need */
+    height: 50%;
+    background: white;
+    color: black;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+}
+
+.calendar-inner {
+    padding: 10px 10px;
+}
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
+}
+
+
+.calendar .calendar-inner .calendar-body div>a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background-color: rgb(133, 135, 136);
+    border-radius: 4px;
+}
+/* Making right mark auto margined */
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+/* Calender Controls resizing*/
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
