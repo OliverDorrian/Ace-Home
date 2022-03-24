@@ -69,7 +69,8 @@ html{
 }
 
 body {
-    background-color: var(--aliWhite);
+    background-color: #1204dd;
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -164,56 +165,10 @@ body {
 
 .account{
     color: black;
-
     border-radius: 40px;
     margin-top: auto;
 }
 
-#progressCircle{
-    width: 7vh;
-    height: 7vh;
-}
-.progressBar{
-    margin-top: auto;
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.circle {
-    position: relative;
-    width: 100%;
-    height: 100%;
- 
-    border-radius: 50%;
-    overflow: hidden;
-    background-image: conic-gradient(rgb(37, 161, 37) 78%, white 0);
-    margin-left: 1vh;
-    margin-bottom: 1vh;
-}
-
-.circle .inner {
-    font-size: 0.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 70%;
-    height: 70%;
-    background: var(--aliWhite);
-    border-radius: 50%;
-}
-
-.inner p{
-    padding: 1vh;
-}
 
 #overview{
     width: 66vw;
@@ -260,7 +215,7 @@ body {
 }
 
 .coruseBox{
-    box-shadow: 10px 10px grey;
+    box-shadow: 10px 10px black;
     border: 1px solid black;
     color: black;
     background-color: white;
@@ -273,9 +228,6 @@ body {
     justify-content: space-around;
 }
 
-.lilac{
-    background-color: #127ed6c0;
-}
 
 .courseIMG{
     padding: 2vh;
@@ -326,6 +278,7 @@ body {
 }
 
 #account{
+    color: black;
     border: 1px solid black;
     border-top: 0;
     border-bottom: 0;
@@ -366,16 +319,74 @@ body {
     font-size: 0.8rem;   
 }
 
-#progress{
-    box-shadow: 10px 10px grey;
+#progress {
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px black;
     border: 1px solid black;
     position: fixed;
     top: 50%;
-    left: 62%;
+    left: 18vw;
+    padding: 1vh;
+    margin-left: 1vh;
     width: 18vw;
     height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
+
+#progress p{
+    text-align: center;
+    padding: 3vh;
+    font-size: 2rem;
+}
+
+.progressBar{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#progressCircle{
+    width: 20vh;
+    height: 20vh;
+
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: conic-gradient(rgb(145, 255, 0) 78%, rgb(247, 241, 241) 0);
+}
+
+.circle .inner {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background: var(--aliWhite);
+    border-radius: 50%;
+}
+
+.inner p{
+    padding: 1vh;
+}
 
 .calendar {
     font-family: 'IBM Plex Sans', sans-serif;
