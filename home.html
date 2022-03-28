@@ -12,21 +12,21 @@
             </div>
             <div id="listOfLinks">
                 <div class="course">
-                    <div class="courseVis active">
+                    <div class="courseVis" id="active">
                         <img src="assets/home.svg">
-                        <p>Overview</p>
+                        <p id="homeClick">Overview</p>
                     </div>
                 </div>
                 <div class="course">
                     <div class="courseVis">
                         <img src="assets/test.png">
-                        <p class="courseText">Quizzes</p>
+                        <p class="courseText" id="quizClick">Quizzes</p>
                     </div>
                 </div>
                 <div class="course">
                     <div class="courseVis">
                         <img src="assets/timetable.png">
-                        <p class="courseText">Timetable</p>
+                        <p class="courseText" id="timeClick">Timetable</p>
                     </div>
                 </div>
                 <div class="course">
@@ -87,13 +87,13 @@
                         </div>
                         <div class="courseInformation">
                             <img src="assets/blank-page.png">
-                            <p>13</p>
+                            <p>39</p>
                             <hr style="width: 10%; border-radius: 10px; transform: rotate(90deg);", size="1", color=grey>
                             <img src="assets/test-quiz.png">
-                            <p>1</p>
+                            <p>9</p>
                             <hr style="width: 10%; border-radius: 10px; transform: rotate(90deg);", size="1", color=grey>
                             <img src="assets/icons8-user-30.png">
-                            <p>98</p>
+                            <p>28</p>
                         </div>
                     </div>
                     <div class="coruseBox">             
@@ -210,6 +210,22 @@
                 </div>
                 <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
                 <div class="calendar"></div>
+            </div>
+        </div>
+        
+        <div id="quizBig">
+            <div id="quizTitle">
+                <p>Quizzes✍️</p>
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+        <div id="calendarBig">
+            <div id="callenderContainer">
+                <iframe src="https://calendar.google.com/calendar/embed?src=dpqj0f4137m5brcrar1jn1vs64%40group.calendar.google.com&ctz=Europe%2FLondon" style="border: 0" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
         <script src="home.js"></script>

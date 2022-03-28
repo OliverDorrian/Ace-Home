@@ -1,6 +1,48 @@
-//check the console for date click event
-//Fixed day highlight
-//Added previous month and next month view
+var cal = document.getElementById("calendarBig");
+var quiz = document.getElementById("quizBig");
+var home = document.getElementById("overview");
+
+
+// makes home appear 
+document.getElementById("homeClick").addEventListener("click", function(){
+  cal.style.visibility = "hidden";
+  quiz.style.visibility = "hidden";
+
+  let allClickLinks = document.getElementById("active");
+  allClickLinks.removeAttribute("id");
+
+  document.getElementById("homeClick").parentElement.setAttribute("id", "active");
+  home.style.visibility = "visible";
+});
+
+// makes quiz Appear
+document.getElementById("quizClick").addEventListener("click", function(){
+
+  home.style.visibility = "hidden";
+  cal.style.visibility = "hidden";
+
+  let allClickLinks = document.getElementById("active");
+  allClickLinks.removeAttribute("id");
+
+  document.getElementById("quizClick").parentElement.setAttribute("id", "active");
+  quiz.style.visibility = "visible";
+});
+
+// Makes cal appear
+document.getElementById("timeClick").addEventListener("click", function(){
+  home.style.visibility = "hidden";
+  quiz.style.visibility = "hidden";
+
+  let allClickLinks = document.getElementById("active");
+  allClickLinks.removeAttribute("id");
+
+  document.getElementById("timeClick").parentElement.setAttribute("id", "active");
+  cal.style.visibility = "visible";
+});
+
+
+
+
 
 function CalendarControl() {
     const calendar = new Date();
@@ -210,7 +252,7 @@ function CalendarControl() {
       init: function () {
         calendarControl.plotSelectors();
         calendarControl.plotDates();
-        calendarControl.attachEvents();
+
       }
     };
     calendarControl.init();
