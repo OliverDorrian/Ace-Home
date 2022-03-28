@@ -111,7 +111,7 @@ body {
     justify-content: center;
     height: 10vh;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 #listOfLinks{
@@ -141,7 +141,7 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    font-size: 1.2rem;
+    font-size: 1em;
     justify-content: flex-start;
     align-items: center;
 }
@@ -159,7 +159,7 @@ body {
 
 .courseVis img{
     margin-left: 4vh;
-    height: 2rem;
+    height: 2em;
     width: auto;
     margin-right: 1vh;
 }
@@ -177,26 +177,26 @@ body {
 }
 
 #welcomeText{
-    font-size: 2rem;
+    font-size: 2em;
     margin-left: 2vw;
     margin-top: 5vh;
 }
 
 #welcomeTextSmall {
-    font-size: 1rem;
+    font-size: 0.5em;
     opacity: 0.7;
 }
 
 #course{
     color: white;
     width: 95%;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-left: 1.5vw;
 }
 
 #coursesTitle{
     margin: 1vh;
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 #rowOfCourses{
@@ -248,10 +248,11 @@ body {
 
 .courseTitleContain p{
     color: #94a1b2;
+    font-size: 0.8em;
 }
 
 .courseTitle{
-    font-size: 1rem;
+    font-size: 1em;
     margin-bottom: 1vh;
 }
 
@@ -299,7 +300,7 @@ body {
     margin-left: 2vw;
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
-    font-size: 0.8rem;
+    font-size: 0.7em;
 }
 
 #imgOfUser{
@@ -320,7 +321,7 @@ body {
 
 #imgOfUser p{
     padding: 1vh;
-    font-size: 0.8rem;   
+    font-size: 1em;   
 }
 
 #progress {
@@ -340,7 +341,7 @@ body {
 #progress h1{
     text-align: center;
     padding: 1vh;
-
+    font-size: 1.5em;
 }
 
 .progressBar{
@@ -382,7 +383,7 @@ body {
 }
 
 .inner p{
-    font: 3rem;
+    font: 5em;
 }
 
 #bottomSection{
@@ -406,12 +407,12 @@ body {
 
 #quizSection h1{
     padding: 1vh;
+    font-size: 1.5em;
 }
 
 .downLoadsTitle{
     font-weight: bold;
-    font-size: 2rem;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 .downLoadArea{
@@ -421,7 +422,7 @@ body {
 
 .downLoadAreaTitle{
     height: 2vh;
-    padding: 1vh;
+    padding: 1vh 0 1vh 1vh;
     width: 100%;
 }
 
@@ -505,9 +506,10 @@ body {
 }
 
 .calendar {
+    font-size: 0.7em;
     font-family: 'IBM Plex Sans', sans-serif;
     position: relative;
-    width: 90%; /*change as per your design need */
+    width: 100%; /*change as per your design need */
     height: 50%;
     background: #3f3f3f;
     color: white;
