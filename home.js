@@ -1,3 +1,19 @@
+const goToTop = () => window.scrollTo(0, 0);
+
+function disableBodyScroll(){
+  const element = document.querySelector("#appBody");
+  element.classList.add("stopScroll");
+  goToTop();
+
+}
+ 
+function enableBodyScroll(){
+  const element = document.querySelector("#appBody");
+  element.classList.remove("stopScroll");
+}
+
+disableBodyScroll();
+
 var cal = document.getElementById("calendarBig");
 var quiz = document.getElementById("quizBig");
 var home = document.getElementById("overview");
@@ -5,6 +21,7 @@ var home = document.getElementById("overview");
 
 // makes home appear 
 document.getElementById("homeClick").addEventListener("click", function(){
+  disableBodyScroll();
   cal.style.visibility = "hidden";
   quiz.style.visibility = "hidden";
 
@@ -17,7 +34,7 @@ document.getElementById("homeClick").addEventListener("click", function(){
 
 // makes quiz Appear
 document.getElementById("quizClick").addEventListener("click", function(){
-
+  enableBodyScroll();
   home.style.visibility = "hidden";
   cal.style.visibility = "hidden";
 
@@ -30,6 +47,7 @@ document.getElementById("quizClick").addEventListener("click", function(){
 
 // Makes cal appear
 document.getElementById("timeClick").addEventListener("click", function(){
+  disableBodyScroll();
   home.style.visibility = "hidden";
   quiz.style.visibility = "hidden";
 
