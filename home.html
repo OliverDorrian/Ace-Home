@@ -38,7 +38,7 @@
                 <div class="course">
                     <div class="courseVis">
                         <img src="assets/exam.png">
-                        <p class="courseText">Grades</p>
+                        <p class="courseText" id="gradesClick">Grades</p>
                     </div>
                 </div>
                 <div class="course">
@@ -64,7 +64,7 @@
             <div id="course">
                 <p id="coursesTitle">Courses</p>
                 <div id="rowOfCourses">
-                    <div class="coruseBox ">
+                    <div class="coruseBox">
                         <div class="courseTitleContain">
                             <h1 class="courseTitle">Core 1: Web Dev</h1> 
                             <p>The basics of web development, the process of creating a website.</p>
@@ -221,11 +221,38 @@
                     </div>
                     <div class="rowOfQuizzes">
                         <div class="quizBox">
-                            <div class="quizBoxTop">
+                            <div class="quizBoxTop bluePurple">
                                 <h4>Web Portfolio 1</h4>
                             </div>
                             <div class="quizBoxBottom">
                                 <p>Basic web design questions needed for core work</p>
+                                <button class="quizTry">Attempt Quiz</button>
+                            </div>
+                        </div>
+                        <div class="quizBox">
+                            <div class="quizBoxTop circleBack">
+                                <h4>Week 4 Test</h4>
+                            </div>
+                            <div class="quizBoxBottom">
+                                <p>Focusing on how to center a div</p>
+                                <button class="quizTry">Attempt Quiz</button>
+                            </div>
+                        </div>
+                        <div class="quizBox">
+                            <div class="quizBoxTop triangle">
+                                <h4>Half Term Assessment</h4>
+                            </div>
+                            <div class="quizBoxBottom">
+                                <p>Test to be completed over the half term period</p>
+                                <button class="quizTry">Attempt Quiz</button>
+                            </div>
+                        </div>
+                        <div class="quizBox">
+                            <div class="quizBoxTop jag">
+                                <h4>Web Portfolio 3</h4>
+                            </div>
+                            <div class="quizBoxBottom">
+                                <p>Advanced web design questions needed for core work</p>
                                 <button class="quizTry">Attempt Quiz</button>
                             </div>
                         </div>
@@ -237,12 +264,28 @@
                     </div>
                     <div class="rowOfQuizzes">
                         <div class="quizBox">
-                            <div class="quizBoxTop">
-                                <img src="">
+                            <div class="quizBoxTop wave">
+                                <h4>Test For Week 12</h4>
                             </div>
                             <div class="quizBoxBottom">
-                                <h1></h1>
-                                <p></p>
+                                <p>Quiz for Freudian methods and their influences</p>
+                                <button class="quizTry">Attempt Quiz</button>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quizContainer">
+                    <div class="quizBoxTitle">
+                        <p>Banking</p>
+                    </div>
+                    <div class="rowOfQuizzes">
+                        <div class="quizBox">
+                            <div class="quizBoxTop jag">
+                                <h4>Loan Assessments</h4>
+                            </div>
+                            <div class="quizBoxBottom">
+                                <p>Marked work for testing loan approval rates</p>
+                                <button class="quizTry">Attempt Quiz</button>                                
                             </div>
                         </div>
                     </div>
@@ -253,6 +296,66 @@
         <div id="calendarBig">
             <div id="callenderContainer">
                 <iframe src="https://calendar.google.com/calendar/embed?src=dpqj0f4137m5brcrar1jn1vs64%40group.calendar.google.com&ctz=Europe%2FLondon" style="border: 0" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div id="gradesBig">
+            <h4>Website Development</h4>
+            <div class="gradesContain">
+                <div class="generalInfomation bluePurple">
+                    <div class="averageCompletion">
+                        <p class="averageCompleteTitle">Average <br>Completion:</p>
+                        <div class="progressBarSmall">
+                            <div id="progressCircleSmall">
+                                <div class="circle">
+                                    <div class="inner">
+                                        <p>78%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gradesInformation">
+                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                    <div class="titleSection">
+                        <div class="assementTitle">
+                            <p>Assessment Title</p>
+                        </div>
+                        <div class="gradeTitle">
+                            <p>Grade</p>
+                        </div>
+                        <div class="rangeTitle">
+                            <p>Range</p>
+                        </div>
+                        <div class="percentageTitle">
+                            <p>Percentage</p>
+                        </div>
+                    </div>
+                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                    <div class="gradesSection">
+                        <div class="gradesRow">
+                            <p class="assementValue">Web Portfolio 1</p>
+                            <p class="gradeValue">77</p>
+                            <p class="rangeValue">0-120</p>
+                            <p class="percentageValue">64.1%</p>
+                        </div>
+                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                        <div class="gradesRow">
+                            <p class="assementValue">Week 4 Test</p>
+                            <p class="gradeValue">88</p>
+                            <p class="rangeValue">0-100</p>
+                            <p class="percentageValue">88%</p>
+                        </div>
+                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                        <div class="gradesRow">
+                            <p class="assementValue">Half Term Test</p>
+                            <p class="gradeValue">10</p>
+                            <p class="rangeValue">0-25</p>
+                            <p class="percentageValue">40%</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="home.js"></script>
