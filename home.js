@@ -24,6 +24,7 @@ document.getElementById("homeClick").addEventListener("click", function(){
   disableBodyScroll();
   cal.style.visibility = "hidden";
   quiz.style.visibility = "hidden";
+  grades.style.visibility = "hidden";
 
   let allClickLinks = document.getElementById("active");
   allClickLinks.removeAttribute("id");
@@ -37,6 +38,8 @@ document.getElementById("quizClick").addEventListener("click", function(){
   enableBodyScroll();
   home.style.visibility = "hidden";
   cal.style.visibility = "hidden";
+  grades.style.visibility = "hidden";
+
 
   let allClickLinks = document.getElementById("active");
   allClickLinks.removeAttribute("id");
@@ -62,7 +65,7 @@ document.getElementById("timeClick").addEventListener("click", function(){
 
 // Makes grades appear
 document.getElementById("gradesClick").addEventListener("click", function(){
-  disableBodyScroll();
+  enableBodyScroll();
   home.style.visibility = "hidden";
   cal.style.visibility = "hidden";
   quiz.style.visibility = "hidden";

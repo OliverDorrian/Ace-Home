@@ -663,10 +663,20 @@ body {
     border-radius:  10px 10px 0 0;
 }
 
-.wave{
+.bluePurple-no-border {
+    background-image: url("assets/webQuiz1.svg");
+    background-size: cover;
+}
+
+.wave {
     background-image: url("assets/wave.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0; 
+}
+
+.wave-no-border{
+    background-image: url("assets/wave.svg");
+    background-size: cover;
 }
 
 .circleBack{
@@ -675,25 +685,30 @@ body {
     border-radius:  10px 10px 0 0; 
 }
 
-.triangle{
+.triangle {
     background-image: url("assets/tri.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0; 
 }
 
-.jag{
+.jag {
     background-image: url("assets/jag.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0; 
 }
 
+.jag-no-border{
+    background-image: url("assets/jag.svg");
+    background-size: cover;
+}
+
 #calendarBig{
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 12vw;
     width: 88vw;
-    height: 100vh;
+    height: 100%;
 }
 
 #callenderContainer{
@@ -708,11 +723,10 @@ body {
 
 #gradesBig{
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 12vw;
     width: 88vw;
-    height: 100vh;
 }
 
 #gradesBig h4{
@@ -732,6 +746,7 @@ body {
 .generalInfomation{
     padding: 1vh;
     height: 20vh;
+    display: flex;
 }
 
 .averageCompletion{
@@ -755,6 +770,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.quizTakenContainer{
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2em;
+}
+
+.topScoreContainer{
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2em;
+}
+
+.quizzesLeftContainer{
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2em;
+}
+
+.spaceLeft{
+    margin-left: 1vh;
 }
 
 .averageCompleteTitle{
