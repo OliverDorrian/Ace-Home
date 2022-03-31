@@ -77,8 +77,8 @@ html{
 }
 
 body {
-    background-color: #000000;
-    color: white;
+    background-color: #f2f2f2;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -92,6 +92,7 @@ body {
 #sideBar{
     color: var(--aliwhite);
     background-color: #2c2c2c;
+    color: white;
     position: fixed;
     top: 0;
     height: 100%;
@@ -174,9 +175,8 @@ body {
 
 #overview{
     height: 95vh;  
-    width: 71vw;
+    width: 88vw;
     margin-left: 12vw;
-    margin-right: 17vw;
 }
 
 #welcomeText{
@@ -198,6 +198,7 @@ body {
 }
 
 #coursesTitle{
+    color: black;
     margin: 1vh;
     font-size: 1.5em;
 }
@@ -214,6 +215,8 @@ body {
 }
 
 .coruseBox{
+    border: 1px solid black;
+    box-shadow: 10px 10px black;
     cursor: pointer;
     color:  #fffffe;
     border-radius: 5px;
@@ -246,7 +249,7 @@ body {
 }
 
 .courseTitleContain p{
-    color: #94a1b2;
+    color: #ffffff;
     font-size: 0.8em;
 }
 
@@ -281,51 +284,10 @@ body {
     height: 3vh;
 }
 
-#account{
-    color: white;
-
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    background-color: #3f3f3f;
-    position: fixed;
-    right: 0;
-    width: 17%;
-    top: 0;
-    height: 100%;
-}
-
-#accountTitle{
-    margin-left: 2vw;
-    margin-top: 1.5vh;
-    margin-bottom: 1.5vh;
-    font-size: 0.7em;
-}
-
-#imgOfUser{
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#imgOfUser img{
-    border: 2px solid black;
-    margin: 2vh;
-    width: 40%;
-    height: 40%;
-    border-radius: 50%;
-}
-
-#imgOfUser p{
-    padding: 1vh;
-    font-size: 1em;   
-}
-
 #progress {
-    color: white;
-    background-color: #3f3f3f;
+    color: black;
+    box-shadow: 10px 10px black;
+    background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     position: relative;
@@ -363,7 +325,7 @@ body {
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
-    background-image: conic-gradient(#7f5af0 78%, rgb(247, 241, 241) 0);
+    background-image: conic-gradient(#7f5af0 78%, rgb(0, 0, 0) 0);
 }
 
 .circle .inner {
@@ -376,7 +338,7 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    background: #3f3f3f;
+    background: white;
     border-radius: 50%;
 }
 
@@ -386,7 +348,7 @@ body {
 
 #bottomSection{
     color: white;
-    width: 95%;
+    width: 95.5%;
     margin-top: 7vh;
     margin-left: 1.5vw;
     display: flex;
@@ -396,11 +358,13 @@ body {
     display: inline;
     padding: 1vh;
     margin-left: auto;
-    width: 64%;
+    width: 70%;
     border-radius: 5px;
     height: 40vh;
-    background-color: #3f3f3f;
-    color: white;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 10px 10px black;
 }
 
 #quizSection h1{
@@ -429,11 +393,15 @@ body {
 }
 
 .name{
-    width: 50%;
+    width: 60%;
 }
 
 .author{
-    margin-left: 19%;
+    width: 10%;
+}
+
+.coruseMark{
+    margin-left: 10%;
     width: 10%;
 }
 
@@ -445,8 +413,7 @@ body {
 
 .row{
     height: 7vh;
-    width: 50vw;
-    display: inline-flex;
+    display:flex;
     flex-direction: row;
     align-items: center;
     align-content: flex-end;
@@ -465,11 +432,10 @@ body {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    align-content: flex-end;
-    justify-content: space-between;
+
  }
 
-.rowDateUpload, .rowFileSize, .rowAuthor{
+.rowDateUpload, .rowFileSize, .rowAuthor .rowCourse {
     display: inline-block;
 }
 
@@ -478,7 +444,6 @@ body {
     margin-bottom: 1vh;
     height: 5vh;
     width: 5vh;
-    filter: invert(1);
 }
 
 .fileName{
@@ -499,7 +464,13 @@ body {
 
 .rowAuthor{
     display: inline;
-    height: 100%;
+    width: 20%;
+}
+
+.rowCourse{
+    display: inline;
+    margin-left: 30%;
+    width: 20%;
 }
 
 .calendar {
@@ -611,12 +582,14 @@ body {
 }
 
 .quizBox{
+    border: 1px solid black;
     margin-top: 2vh;
     margin-right: 2vh;
     border-radius: 10px;
     width: 30%;
     height: 35vh;
-    background-color:#2c2c2c;
+    background-color: white;
+    box-shadow: 10px 10px black;
 }
 
 .quizBoxTop{
@@ -625,6 +598,7 @@ body {
 }
 
 .quizBoxTop h4{
+    color: white;
     font-size: 1.5em;
     text-align: center;
     padding-top: 15%;
@@ -637,7 +611,7 @@ body {
 }
 
 .quizBoxBottom p{
-    color:rgb(224, 222, 228);
+    color: black;
 }
 
 .quizTry{
@@ -691,6 +665,11 @@ body {
     border-radius:  10px 10px 0 0; 
 }
 
+.triangle-no-border {
+    background-image: url("assets/tri.svg");
+    background-size: cover;
+}
+
 .jag {
     background-image: url("assets/jag.svg");
     background-size: cover;
@@ -727,6 +706,7 @@ body {
     top: 0;
     left: 12vw;
     width: 88vw;
+    padding-bottom: 4vh;
 }
 
 #gradesBig h4{
@@ -739,11 +719,13 @@ body {
     margin-top: 1%;
     margin-left: 2%;
     width: 96%;
-    background-color: #2c2c2c;
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 10px 10px black;
 }
 
 .generalInfomation{
+    color: white;
     padding: 1vh;
     height: 20vh;
     display: flex;
@@ -765,6 +747,7 @@ body {
 }
 
 .progressBarSmall{
+    color: black;
     height: 90%;
     display: flex;
     display: flex;
@@ -808,6 +791,8 @@ body {
 }
 
 .gradesInformation{
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
     width: 100%;
 }
 
